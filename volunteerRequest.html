@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSO - Devenir Bénévole</title>
+    <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
+            <!--=============== REMIXICONS ===============-->
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+          <div class="nav__data">
+            <a href="#" class="nav__logo">
+              <img src="Assets/Logo_Full.png" alt="" class="logo-img" />
+            </a>
+  
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line nav__toggle-menu"></i>
+              <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+          </div>
+  
+          <!--=============== NAV MENU ===============-->
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li>
+                <a href="index.html" class="nav__link">Acceuil</a>
+              </li>
+              <li>
+                <a href="joinUs.html" class="nav__link">Nous Joindre</a>
+              </li>
+              <li>
+                <a href="helpRequest.html" class="nav__link">Aide</a>
+              </li>
+              <li>
+                <a href="volunteerRequest.html" class="nav__link">bénévolat</a>
+              </li>
+  
+              <!--=============== DROPDOWN 1 ===============-->
+              <!--<li class="dropdown__item">
+                <div class="nav__link dropdown__button">
+                  S'impliquer <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+  
+                <div class="dropdown__container">
+                  <div class="dropdown__content">
+                    <div class="dropdown__group">
+                      <div class="dropdown__icon">
+                        <i class="ri-flashlight-line"></i>
+                      </div>
+  
+                      <span class="dropdown__title">On a besoin de vous!</span>
+  
+                      <ul class="dropdown__list">
+                        <li>
+                            <a href="helpRequest.html" class="dropdown__link">Demande d'aide</a>
+                        </li>
+                        <li>
+                            <a href="volunteerRequest.html" class="dropdown__link">Devenir Bénévole</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown__link">3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>-->
+              <li>
+                <a href="activity.html" class="nav__link">Activité</a>
+              </li>
+              <li>
+                <a href="aboutUs.html" class="nav__link">SSO</a>
+              </li>
+              <li>
+                <form action="https://www.paypal.com/donate" method="post" target="_top" class="nav__link">
+                    <input type="hidden" name="hosted_button_id" value="DJR49SARK8EZ2" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="volunteer-form container">
+        <h1>Demande d'Adhésion de Bénévole pour Salem Support Outaouais (SSO)</h1>
+        <form class="form-format" name="volunteer-application" method="POST" data-netlify="true">
+            <div class="form-group">
+                <label for="full-name">Nom et Prénom</label>
+                <input class="input" required placeholder="Nom et Prénom" type="text" name="Nom et Prénom" id="full-name">
+            </div>
+            <div class="form-group">
+                <label for="address">Adresse</label>
+                <input class="input" required placeholder="Adresse" type="text" name="Adresse" id="address">
+            </div>
+            <div class="form-group">
+                <label for="city-province-postal">Ville, Province, Code Postal</label>
+                <input class="input" required placeholder="Ville, Province, Code Postal" type="text" name="Ville, Province, Code Postal" id="city-province-postal">
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input class="input" required placeholder="Téléphone" type="tel" name="Téléphone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="input" required placeholder="email@address.com" type="email" name="Email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="availability-days">Jours disponibles</label>
+                <div id="availability-days">
+                    <div class="days-and-checks">
+                        <label for="lundi">Lundi</label> <input  type="checkbox" name="Lundi" id="lundi">
+                    </div>
+                    <div class="days-and-checks">
+                        <label for="mardi">Mardi</label> <input type="checkbox" name="Mardi" id="mardi">
+                    </div>
+                    <div class="days-and-checks">
+                        <label for="mercredi">Mercredi</label> <input type="checkbox" name="Mercredi" id="mercredi">
+                    </div>
+                    <div class="days-and-checks">
+                        <label for="jeudi">Jeudi</label> <input type="checkbox" name="Jeudi" id="jeudi">
+                    </div>
+                    <div class="days-and-checks">
+                        <label for="vendredi">Vendredi</label> <input type="checkbox" name="Vendredi" id="vendredi">
+                    </div>
+                    <div class="days-and-checks">
+                        <label for="samedi">Samedi</label> <input type="checkbox" name="Samedi" id="samedi">
+                    </div>
+                    <div class="days-and-checks">
+                        <label for="dimanche">Dimanche</label> <input type="checkbox" name="Dimanche" id="dimanche">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="availability-hours">Heures disponibles</label>
+                <input class="input" required placeholder="Heures disponibles" type="text" name="Heures disponibles" id="availability-hours">
+            </div>
+            <div class="form-group">
+                <label for="interests">Intérêts de bénévolat</label>
+                <select class="input" name="Intérêts de bénévolat" id="interests">
+                    <option value="Assistance aux nouveaux arrivants">Assistance aux nouveaux arrivants</option>
+                    <option value="Distribution alimentaire">Distribution alimentaire</option>
+                    <option value="Soutien administratif">Soutien administratif</option>
+                    <option value="Organisation d'événements">Organisation d'événements</option>
+                    <option value="Autres">Autres (précisez)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Expérience et compétences</label>
+                <textarea class="input" name="Expérience et compétences" id="experience" placeholder="Décrivez toute expérience pertinente et/ou compétences spéciales"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="why-volunteer">Pourquoi souhaitez-vous devenir bénévole chez SSO ?</label>
+                <textarea class="input" name="Pourquoi bénévole" id="why-volunteer" placeholder="Expliquez vos motivations"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="commitment">Engagement</label>
+                <p>Je m'engage à respecter les valeurs et la mission de la SSO et à contribuer positivement aux activités pour lesquelles je me porte volontaire.</p>
+                <div class="form-group-sub">
+                    <div class="form-group-sub2">
+                        <label for="signature">Signature</label>
+                        <input class="input" required placeholder="Signature" type="text" name="Signature" id="signature">
+                    </div>
+                    <div class="form-group-sub2">
+                        <label for="date">Date</label>
+                        <input class="input" required placeholder="Date" type="date" name="Date" id="date">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="authorization">Autorisation et Confirmation</label>
+                </div>
+                <div class="labels-and-checks">
+                    <input type="checkbox" required name="Autorisation et Confirmation" id="authorization">
+                    <label for="authorization">J'autorise SSO à vérifier les informations fournies si nécessaire et je confirme que les informations ci-dessus sont correctes.</label>
+                </div>
+                
+            </div>
+            <button class="submit-btn form-group">Envoyer</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="joinUs.html">Nous Joindre</a>
+            <a href="helpRequest.html">Aide</a>
+            <a href="volunteerRequest.html">bénévolat</a>
+            <a href="activity.html">Activité</a>
+            <a href="aboutUs.html">SSO</a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=DJR49SARK8EZ2" class="donate"> Donate</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

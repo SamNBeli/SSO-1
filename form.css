@@ -1,0 +1,85 @@
+.input {
+    outline: 3px solid hsl(203, 30%, 26%);
+}
+  
+.input:not(:placeholder-shown):valid {
+    outline-color: var(--clr-success);
+}
+  
+.input:not(:placeholder-shown):invalid {
+    outline-color: var(--clr-error);
+}
+  
+.input:focus:invalid {
+    outline-color: var(--clr-warning)
+}
+
+.form-group{
+ margin-top: 2rem;
+}
+
+.form-group .input {
+    position: relative; 
+    height: 50px; 
+    width: 100%; 
+    outline: none;
+    font-size: 1rem;
+    color:#707070; 
+    margin-top: 8px; 
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form-group-sub {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.form-group textarea {
+    position: relative; 
+    height: 100px; 
+    width: 100%; 
+    outline: none;
+    font-size: 1rem;
+    color:#707070; 
+    margin-top: 8px; 
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ba5d00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+
+/* VolunteerRequest*/
+
+#availability-days{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.days-and-checks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+}
+.labels-and-checks{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}

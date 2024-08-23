@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSO - Demande d'aide</title>
+    <link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
+            <!--=============== REMIXICONS ===============-->
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="Assets/Logo_Full.png" alt="" class="logo-img" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__toggle-menu"></i>
+            <i class="ri-close-line nav__toggle-close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link">Acceuil</a>
+            </li>
+            <li>
+              <a href="joinUs.html" class="nav__link">Nous Joindre</a>
+            </li>
+            <li>
+              <a href="helpRequest.html" class="nav__link">Aide</a>
+            </li>
+            <li>
+              <a href="volunteerRequest.html" class="nav__link">bénévolat</a>
+            </li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <!--<li class="dropdown__item">
+              <div class="nav__link dropdown__button">
+                S'impliquer <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <i class="ri-flashlight-line"></i>
+                    </div>
+
+                    <span class="dropdown__title">On a besoin de vous!</span>
+
+                    <ul class="dropdown__list">
+                      <li>
+                          <a href="helpRequest.html" class="dropdown__link">Demande d'aide</a>
+                      </li>
+                      <li>
+                          <a href="volunteerRequest.html" class="dropdown__link">Devenir Bénévole</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>-->
+            <li>
+              <a href="activity.html" class="nav__link">Activité</a>
+            </li>
+            <li>
+              <a href="aboutUs.html" class="nav__link">SSO</a>
+            </li>
+            <li>
+              <form action="https://www.paypal.com/donate" method="post" target="_top" class="nav__link">
+                  <input type="hidden" name="hosted_button_id" value="DJR49SARK8EZ2" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+                  </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+      <div class="help-request-form container">
+        <h1>Demande d'Aide - Programme Salem Solidarité</h1>
+        <form name="financial-assistance" method="POST" data-netlify="true">
+            <div class="form-group">
+                <label for="full-name">Nom Complet</label>
+                <input class="input" required placeholder="Nom et Prénom" type="text" name="Nom Complet" id="full-name">
+            </div>
+            <div class="form-group">
+                <label for="address">Adresse</label>
+                <input class="input" required placeholder="Adresse" type="text" name="Adresse" id="address">
+            </div>
+            <div class="form-group">
+                <label for="phone">Numéro de téléphone</label>
+                <input class="input" required placeholder="Numéro de téléphone" type="tel" name="Numéro de téléphone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse email</label>
+                <input class="input" required placeholder="email@address.com" type="email" name="Adresse email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="situation">Décrivez votre situation actuelle qui nécessite une aide financière</label>
+                <textarea class="input" required name="Situation actuelle" id="situation" placeholder="Détaillez les circonstances..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="assistance">Nature de l'aide demandée</label>
+                <select class="input" name="Nature de l'aide demandée" id="assistance">
+                    <option value="Paiement de loyer">Paiement de loyer</option>
+                    <option value="Paiement d'hypothèque">Paiement d'hypothèque</option>
+                    <option value="Factures médicales">Factures médicales</option>
+                    <option value="Autres dépenses urgentes">Autres dépenses urgentes (précisez)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Montant demandé (CAD)</label>
+                <input class="input" required type="number" placeholder="Montant demandé" name="Montant demandé" id="amount">
+            </div>
+            <div class="form-group">
+                <label for="documents">Joignez tout document justificatif</label>
+                <input class="input" required type="file" name="Documents justificatifs" id="documents" multiple>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="declaration">Déclaration de véracité</label>
+              </div>
+              <div class="labels-and-checks">
+                <input type="checkbox" required name="Déclaration de véracité" id="declaration">
+                <label for="declaration">Je déclare que toutes les informations fournies dans cette demande sont vraies et exactes.</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="consent">Consentement à l'évaluation</label>
+              </div>
+              <div class="labels-and-checks">
+                <input type="checkbox" required name="Consentement à l'évaluation" id="consent">
+                <label for="consent">J'accepte que les informations fournies soient évaluées par le comité.</label>
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature du Demandeur</label>
+                <input class="input" required placeholder="Signature" type="text" name="Signature du Demandeur" id="signature">
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input class="input" required placeholder="Date" type="date" name="Date" id="date">
+            </div>
+            <button class="submit-btn form-group">Envoyer</button>
+        </form>
+    </div>
+    <footer class="footer">
+      <div class="menu">
+          <a href="index.html">Accueil</a>
+          <a href="joinUs.html">Nous Joindre</a>
+          <a href="helpRequest.html">Aide</a>
+          <a href="volunteerRequest.html">bénévolat</a>
+          <a href="activity.html">Activité</a>
+          <a href="aboutUs.html">SSO</a>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=DJR49SARK8EZ2" class="donate"> Donate</a>
+      </div>
+      <div class="social-media">
+          <a href="https://www.facebook.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook"></a>
+          <a href="https://www.linkedin.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://www.twitter.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"></a>
+      </div>
+  </footer>
+    <script src="main.js"></script>
+</body>
+</html>
